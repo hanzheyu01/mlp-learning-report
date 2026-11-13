@@ -1,1 +1,1 @@
-{"name":"mlp-learning-report","version":"1.0.0","private":true,"type":"module","scripts":{"test":"node verify.mjs","experiment":"node experiment.mjs"}}
+{"name":"mlp-learning-report","version":"1.1.0","private":true,"type":"module","scripts":{"test":"node verify.mjs","experiment":"node experiment.mjs","shenzhen":"node shenzhen-experiment.mjs","build:public":"node build-public.mjs"}}
