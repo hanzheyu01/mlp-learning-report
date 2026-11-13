@@ -1,5 +1,11 @@
 # MLP 参数学习的实现与可视化
 
+在线报告：https://hanzheyu01.github.io/mlp-learning-report/
+
+源码仓库：https://github.com/hanzheyu01/mlp-learning-report
+
+公开报告托管在个人网站仓库的独立目录，页面内嵌样式、训练实现和实验数据；本仓库保留可复现的模块化源码。当前仓库无需另行开启 Pages。
+
 第二次作业：通用 MLP 实验报告。未提供指定课程原文，按通用前馈网络、反向传播与梯度下降实现。
 
 ## 运行
@@ -34,3 +40,4 @@ npm run experiment
 梯度中心差分 epsilon=1e-5，最大绝对误差 1.80e-11。测试集不参与更新。实验仅为单一无噪声合成任务和单个划分，不代表真实任务性能。网页学习率和结构可调；结果表固定来自命令行实验，不随交互改变。
 
 参考：[Deep Learning, Chapter 6](https://www.deeplearningbook.org/contents/mlp.html)。
+
