@@ -1,0 +1,3 @@
+import assert from 'node:assert/strict';
+import {MapGame} from './game-state.js';
+const g=new MapGame();assert.equal(g.examine(),null);const before=[...g.model.p];assert.equal(g.inspect([.6,-.4]).truth,1);assert.deepEqual(g.model.p,before);g.step(100);assert.equal(g.epoch,100);assert.equal(g.examine(),null);g.step(2900);assert.equal(g.epoch,3000);assert(g.examine().accuracy>=.9);const frozen=[...g.model.p];g.step(100);assert.deepEqual(g.model.p,frozen);g.reset(1,4);assert.equal(g.epoch,0);assert.equal(g.inspections,0);assert.equal(g.exam,null);assert.equal(g.model.p.length,17);assert.equal(g.lr,1);console.log('PASS: scouting, eligibility, training, passing default run, frozen exam, reset.');
